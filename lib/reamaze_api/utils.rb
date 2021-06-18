@@ -1,4 +1,4 @@
-require "reamaze_api/utils/hash_keys"
+# require "reamaze_api/utils/hash_keys"
 
 module ReamazeAPI
   module Utils
@@ -10,7 +10,8 @@ module ReamazeAPI
     #
     # Returns a Hash.
     def symbolize_hash(hash)
-      HashKeys.deep_symbolize_keys(hash)
+      # HashKeys.deep_symbolize_keys(hash)
+      hash.symbolize_keys
     end
 
     # Public: Hash used for error responses.
