@@ -11,7 +11,7 @@ module ReamazeAPI
     # Returns a Hash.
     def symbolize_hash(hash)
       # HashKeys.deep_symbolize_keys(hash)
-      hash.symbolize_keys
+      hash.deep_symbolize_keys
     end
 
     # Public: Hash used for error responses.
